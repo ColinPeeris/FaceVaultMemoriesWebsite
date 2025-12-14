@@ -1,21 +1,177 @@
 <html>
 
-<body style="background-color:black; color:white;">
-    <h1>Face Vault Memories</h1>
-    <p>Face Vault Memories is a media management software that allows users to organise their media files (both images
-        and videos). The software also runs facial recognition on all media files and displays the faces of people found
-        in the media files. The user can then add names to the faces so that the software can identify these faces
-        automatically in the future.</p>
-    <p style="text-align: center;">
-        <img src="ScreenShots/Image1.png" alt="Face Vault Memories Screenshot" style="max-width: 100%; height: auto;">
-    </p>
-    <hr style="height:1px;background-color:white;border:none;">
-    <p>Please note that this software is still under development and work is still ongoing to stabilize the code. Facial
-        recognition is also currently just functional at most and not world-class. So manage your expectations.</p>
-    <hr style="height:1px;background-color:white;border:none;">
-    <p>Click below to download:</p>
-    <a href="https://drive.google.com/file/d/1hl4JWfxoWwOA-zgHX0_fcs_HgsyYpDv_/view?usp=sharing" download>Download
-        Installer</a>
+<head>
+    <title>Face Vault Memories - Media Management Software</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 0;
+            border-bottom: 1px solid #444;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        header .subtitle {
+            font-size: 1.2em;
+            color: #a0a0a0;
+            max-width: 600px;
+            margin: 0 auto 20px auto;
+        }
+
+        .download-button {
+            display: inline-block;
+            background-color: #007bff;
+            color: #ffffff;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .download-button:hover {
+            background-color: #0056b3;
+        }
+
+        main {
+            padding: 20px 0;
+        }
+
+        .features-title {
+            text-align: center;
+            font-size: 2.5em;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-item {
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #333;
+        }
+
+        .feature-item h3 {
+            margin-top: 0;
+            color: #0095ff;
+        }
+
+        summary {
+            cursor: pointer;
+            font-weight: bold;
+            outline: none;
+        }
+
+        details>p {
+            margin-top: 15px;
+            text-align: left;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+
+        .notes {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid #444;
+            color: #a0a0a0;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Face Vault Memories</h1>
+            <p class="subtitle">A powerful media player and manager with facial recognition, search, image enhancement,
+                and video editing capabilities.</p>
+            <a href="https://drive.google.com/file/d/1hl4JWfxoWwOA-zgHX0_fcs_HgsyYpDv_/view?usp=sharing"
+                class="download-button" download>Download Installer</a>
+        </header>
+
+        <main>
+            <h2 class="features-title">Key Features</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <h3>Video Editing</h3>
+                    <p>Trim, cut, and assemble your video clips with an intuitive editor.</p>
+                    <details>
+                        <summary>Click for screenshot</summary>
+                        <p>
+                            <img src="ScreenShots/VideoEdittingScreenshot.png" alt="Video Editing">
+                        </p>
+                    </details>
+                </div>
+                <div class="feature-item">
+                    <h3>Image Enhancement</h3>
+                    <p>Automatically improve your photos with one-click enhancement tools.</p>
+                    <details>
+                        <summary>Click for screenshot</summary>
+                        <p>
+                            <img src="ScreenShots/EnhancementScreenshot.png" alt="Image Enhancement">
+                        </p>
+                    </details>
+                </div>
+                <div class="feature-item">
+                    <h3>Facial Recognition</h3>
+                    <p>Organize your media by automatically detecting and identifying people.</p>
+                    <details>
+                        <summary>Click for screenshot</summary>
+                        <p>
+                            <img src="ScreenShots/FacialRecognitionScreenshot.png" alt="Face Recognition Screenshot">
+                        </p>
+                    </details>
+                </div>
+                <div class="feature-item">
+                    <h3>Face Search</h3>
+                    <p>Quickly find all photos and videos of a specific person across your library.</p>
+                    <details>
+                        <summary>Click for screenshot</summary>
+                        <p>
+                            <img src="ScreenShots/FaceSearchScreenshot.png" alt="Face Gallery Screenshot">
+                        </p>
+                    </details>
+                </div>
+            </div>
+        </main>
+
+        <section class="notes">
+            <p>Please note that this software is still under development and work is still ongoing to stabilize the
+                code. Facial recognition is also currently just functional at most and not world-class. So manage your
+                expectations.</p>
+        </section>
+    </div>
 </body>
 
 </html>
