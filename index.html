@@ -178,6 +178,26 @@
             transition: 0.3s;
             cursor: pointer;
         }
+
+        .demo-section {
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        .demo-video-container {
+            max-width: 800px;
+            margin: 0 auto;
+            border: 2px solid #333;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .demo-video {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+        }
     </style>
 </head>
 
@@ -235,6 +255,15 @@
                     </details>
                 </div>
             </div>
+            <section class="demo-section">
+                <h2 class="features-title">See It in Action</h2>
+                <div class="demo-video-container">
+                    <video autoplay loop muted playsinline class="demo-video">
+                        <source src="demo_video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </section>
         </main>
 
         <footer>
